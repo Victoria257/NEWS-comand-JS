@@ -55,11 +55,25 @@ main {
 }
 
 .set {
+    position: relative;
     margin-bottom: 28px;
     width: 288px;
 }
 
+.set:nth-child(4) .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244, 244, 244, 0.4);
+    ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999
+}
+
+
 .thumb {
+    position: relative;
     width: 288px;
     height: 395px;
 }
@@ -67,7 +81,54 @@ main {
 .img-news {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;  
+}
+
+.name-category {
+    position: absolute;
+    top: 40px;
+    left: 0;
+
+    height: 24px;
+    background: rgba(68, 64, 247, 0.7);
+    border-radius: 0px 4px 4px 0px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #FFFFFF;
+  
+}
+
+.already-read-button {
+    position: absolute;
+    top: 14px;
+    right: 36px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #00DD73;
+    background-color: inherit;
+    border: none;
+}
+
+.button-add {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+
+    height: 28px;
+    background: #FFFFFF;
+    border-radius: 20px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: color: #111321;;
 }
 
 
@@ -181,7 +242,6 @@ main {
         }
 
     .list-news {
-        outline: solid red;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
